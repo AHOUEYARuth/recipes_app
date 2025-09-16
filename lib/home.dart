@@ -17,7 +17,13 @@ class _HomeState extends State<Home> {
         foregroundColor: Colors.white,
       ),
       body: const Center(
-        child: Text('Welcome to the Home Page'),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Text('Welcome to the Home Page!', style: TextStyle(fontSize: 24)),
+            SizedBox(height: 20),
+          ],
+        ),
       ),
     );
   }
