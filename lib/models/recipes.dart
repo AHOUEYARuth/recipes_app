@@ -10,6 +10,8 @@ class Recipes {
   final int prepTimeMinutes;
   final List<String> instructions;
   final List<Categories> categList;
+  final String imgpng;
+  final String chef;
 
   Recipes({
     required this.title,
@@ -20,27 +22,53 @@ class Recipes {
     required this.prepTimeMinutes,
     required this.instructions,
     required this.categList,
+    required this.imgpng,
+    required this.chef,
   });
 }
 
-List <Recipes>  recipesList = [
+List<Recipes> recipesList = [
   Recipes(
     title: 'Pancakes moelleux',
     image: 'assets/images/pancake.jpg',
     description:
         'Des pancakes légers et moelleux, parfaits pour un petit-déjeuner gourmand.',
     ingredients: [
-      Ingredient(image: 'assets/images/ingredients/flour.png', name: 'Farine', qte: '200g'),
-      Ingredient(image: 'assets/images/ingredients/egg.png', name: 'Œufs', qte: '2'),
-      Ingredient(image: 'assets/images/ingredients/milk.png', name: 'Lait', qte: '300ml'),
-      Ingredient(image: 'assets/images/ingredients/sugar.png', name: 'Sucre', qte: '50g'),
-      Ingredient(image: 'assets/images/ingredients/butter.png', name: 'Beurre', qte: '30g'),
+      Ingredient(
+        image: 'assets/images/ingredients/flour.png',
+        name: 'Farine',
+        qte: '200g',
+      ),
+      Ingredient(
+        image: 'assets/images/ingredients/egg.png',
+        name: 'Œufs',
+        qte: '2',
+      ),
+      Ingredient(
+        image: 'assets/images/ingredients/milk.png',
+        name: 'Lait',
+        qte: '300ml',
+      ),
+      Ingredient(
+        image: 'assets/images/ingredients/sugar.png',
+        name: 'Sucre',
+        qte: '50g',
+      ),
+      Ingredient(
+        image: 'assets/images/ingredients/butter.png',
+        name: 'Beurre',
+        qte: '30g',
+      ),
       Ingredient(
         image: 'assets/images/ingredients/bakingpowder.png',
         name: 'Levure chimique',
         qte: '1 sachet',
       ),
-      Ingredient(image: 'assets/images/ingredients/salt.png', name: 'Sel', qte: '1 pincée'),
+      Ingredient(
+        image: 'assets/images/ingredients/salt.png',
+        name: 'Sel',
+        qte: '1 pincée',
+      ),
     ],
     cookTimeMinutes: 15,
     prepTimeMinutes: 10,
@@ -51,6 +79,8 @@ List <Recipes>  recipesList = [
       'Servez avec du sirop ou des fruits.',
     ],
     categList: [categList[0], categList[2], categList[7]],
+    imgpng: 'assets/images/pancak.png',
+    chef: 'Chef Amra',
   ),
 
   Recipes(
@@ -59,11 +89,31 @@ List <Recipes>  recipesList = [
     description:
         'Un grand classique italien avec des pâtes, de la viande hachée et une sauce tomate savoureuse.',
     ingredients: [
-      Ingredient(image: 'assets/images/ingredients/spaghetti.png', name: 'Spaghetti', qte: '200g'),
-      Ingredient(image: 'assets/images/ingredients/beef.png', name: 'Viande hachée', qte: '150g'),
-      Ingredient(image: 'assets/images/ingredients/tomato.png', name: 'Tomates', qte: '3'),
-      Ingredient(image: 'assets/images/ingredients/onion.png', name: 'Oignon', qte: '1'),
-      Ingredient(image: 'assets/images/ingredients/garlic.png', name: 'Ail', qte: '2 gousses'),
+      Ingredient(
+        image: 'assets/images/ingredients/spaghetti.png',
+        name: 'Spaghetti',
+        qte: '200g',
+      ),
+      Ingredient(
+        image: 'assets/images/ingredients/beef.png',
+        name: 'Viande hachée',
+        qte: '150g',
+      ),
+      Ingredient(
+        image: 'assets/images/ingredients/tomato.png',
+        name: 'Tomates',
+        qte: '3',
+      ),
+      Ingredient(
+        image: 'assets/images/ingredients/onion.png',
+        name: 'Oignon',
+        qte: '1',
+      ),
+      Ingredient(
+        image: 'assets/images/ingredients/garlic.png',
+        name: 'Ail',
+        qte: '2 gousses',
+      ),
     ],
     cookTimeMinutes: 30,
     prepTimeMinutes: 15,
@@ -74,6 +124,8 @@ List <Recipes>  recipesList = [
       'Faites cuire les pâtes et mélangez avec la sauce.',
     ],
     categList: [categList[3], categList[5], categList[10]],
+    imgpng: 'assets/images/spaghettiacc.png',
+    chef: 'Chef Juste',
   ),
 
   Recipes(
@@ -82,11 +134,31 @@ List <Recipes>  recipesList = [
     description:
         'Une omelette simple et rapide, idéale pour un brunch ou un dîner léger.',
     ingredients: [
-      Ingredient(image: 'assets/images/ingredients/egg.png', name: 'Œufs', qte: '3'),
-      Ingredient(image: 'assets/images/ingredients/cheese.png', name: 'Fromage râpé', qte: '50g'),
-      Ingredient(image: 'assets/images/ingredients/milk.png', name: 'Lait', qte: '30ml'),
-      Ingredient(image: 'assets/images/ingredients/salt.png', name: 'Sel', qte: '1 pincée'),
-      Ingredient(image: 'assets/images/ingredients/pepper.png', name: 'Poivre', qte: '1 pincée'),
+      Ingredient(
+        image: 'assets/images/ingredients/egg.png',
+        name: 'Œufs',
+        qte: '3',
+      ),
+      Ingredient(
+        image: 'assets/images/ingredients/cheese.png',
+        name: 'Fromage râpé',
+        qte: '50g',
+      ),
+      Ingredient(
+        image: 'assets/images/ingredients/milk.png',
+        name: 'Lait',
+        qte: '30ml',
+      ),
+      Ingredient(
+        image: 'assets/images/ingredients/salt.png',
+        name: 'Sel',
+        qte: '1 pincée',
+      ),
+      Ingredient(
+        image: 'assets/images/ingredients/pepper.png',
+        name: 'Poivre',
+        qte: '1 pincée',
+      ),
     ],
     cookTimeMinutes: 10,
     prepTimeMinutes: 5,
@@ -97,6 +169,8 @@ List <Recipes>  recipesList = [
       'Pliez et servez chaud.',
     ],
     categList: [categList[1], categList[5]],
+    imgpng: 'assets/images/omeletteacc.png',
+    chef: 'Chef Amra',
   ),
 
   Recipes(
@@ -104,11 +178,31 @@ List <Recipes>  recipesList = [
     image: 'assets/images/saladefruit.jpg',
     description: 'Un dessert coloré et vitaminé à base de fruits de saison.',
     ingredients: [
-      Ingredient(image: 'assets/images/ingredients/apple.png', name: 'Pomme', qte: '1'),
-      Ingredient(image: 'assets/images/ingredients/banana.png', name: 'Banane', qte: '1'),
-      Ingredient(image: 'assets/images/ingredients/orange.png', name: 'Orange', qte: '1'),
-      Ingredient(image: 'assets/images/ingredients/strawberry.png', name: 'Fraises', qte: '100g'),
-      Ingredient(image: 'assets/images/ingredients/honey.png', name: 'Miel', qte: '1 c.à.s'),
+      Ingredient(
+        image: 'assets/images/ingredients/apple.png',
+        name: 'Pomme',
+        qte: '1',
+      ),
+      Ingredient(
+        image: 'assets/images/ingredients/banana.png',
+        name: 'Banane',
+        qte: '1',
+      ),
+      Ingredient(
+        image: 'assets/images/ingredients/orange.png',
+        name: 'Orange',
+        qte: '1',
+      ),
+      Ingredient(
+        image: 'assets/images/ingredients/strawberry.png',
+        name: 'Fraises',
+        qte: '100g',
+      ),
+      Ingredient(
+        image: 'assets/images/ingredients/honey.png',
+        name: 'Miel',
+        qte: '1 c.à.s',
+      ),
     ],
     cookTimeMinutes: 0,
     prepTimeMinutes: 10,
@@ -119,6 +213,8 @@ List <Recipes>  recipesList = [
       'Mélangez et servez frais.',
     ],
     categList: [categList[7], categList[13]],
+    imgpng: 'assets/images/saladefruitacc.png',
+    chef: 'Chef Juste',
   ),
 
   Recipes(
@@ -127,10 +223,26 @@ List <Recipes>  recipesList = [
     description:
         'Un poulet tendre et croustillant rôti au four avec des herbes.',
     ingredients: [
-      Ingredient(image: 'assets/images/ingredients/chicken.png', name: 'Poulet entier', qte: '1'),
-      Ingredient(image: 'assets/images/ingredients/garlic.png', name: 'Ail', qte: '4 gousses'),
-      Ingredient(image: 'assets/images/ingredients/lemon.png', name: 'Citron', qte: '1'),
-      Ingredient(image: 'assets/images/ingredients/herbs.png', name: 'Herbes de Provence', qte: '2 c.à.s'),
+      Ingredient(
+        image: 'assets/images/ingredients/chicken.png',
+        name: 'Poulet entier',
+        qte: '1',
+      ),
+      Ingredient(
+        image: 'assets/images/ingredients/garlic.png',
+        name: 'Ail',
+        qte: '4 gousses',
+      ),
+      Ingredient(
+        image: 'assets/images/ingredients/lemon.png',
+        name: 'Citron',
+        qte: '1',
+      ),
+      Ingredient(
+        image: 'assets/images/ingredients/herbs.png',
+        name: 'Herbes de Provence',
+        qte: '2 c.à.s',
+      ),
     ],
     cookTimeMinutes: 60,
     prepTimeMinutes: 15,
@@ -140,6 +252,8 @@ List <Recipes>  recipesList = [
       'Mettez au four jusqu’à cuisson complète.',
     ],
     categList: [categList[3], categList[5], categList[11]],
+    imgpng: 'assets/images/rotiacc.png',
+    chef: 'Chef Amra',
   ),
 
   Recipes(
@@ -148,10 +262,26 @@ List <Recipes>  recipesList = [
     description:
         'Un plat équilibré à base de riz, légumes croquants et sauce soja.',
     ingredients: [
-      Ingredient(image: 'assets/images/ingredients/rice.png', name: 'Riz cuit', qte: '200g'),
-      Ingredient(image: 'assets/images/ingredients/carrot.png', name: 'Carotte', qte: '1'),
-      Ingredient(image: 'assets/images/ingredients/peas.png', name: 'Petits pois', qte: '50g'),
-      Ingredient(image: 'assets/images/ingredients/soysauce.png', name: 'Sauce soja', qte: '2 c.à.s'),
+      Ingredient(
+        image: 'assets/images/ingredients/rice.png',
+        name: 'Riz cuit',
+        qte: '200g',
+      ),
+      Ingredient(
+        image: 'assets/images/ingredients/carrot.png',
+        name: 'Carotte',
+        qte: '1',
+      ),
+      Ingredient(
+        image: 'assets/images/ingredients/peas.png',
+        name: 'Petits pois',
+        qte: '50g',
+      ),
+      Ingredient(
+        image: 'assets/images/ingredients/soysauce.png',
+        name: 'Sauce soja',
+        qte: '2 c.à.s',
+      ),
     ],
     cookTimeMinutes: 20,
     prepTimeMinutes: 10,
@@ -161,6 +291,8 @@ List <Recipes>  recipesList = [
       'Mélangez et servez chaud.',
     ],
     categList: [categList[3], categList[5], categList[9]],
+    imgpng: 'assets/images/friedriceacc.png',
+    chef: 'Chef Juste',
   ),
 
   Recipes(
@@ -169,11 +301,31 @@ List <Recipes>  recipesList = [
     description:
         'Un burger savoureux avec steak haché, fromage et légumes frais.',
     ingredients: [
-      Ingredient(image: 'assets/images/ingredients/bread.png', name: 'Pain à burger', qte: '2'),
-      Ingredient(image: 'assets/images/ingredients/beef.png', name: 'Steak haché', qte: '2'),
-      Ingredient(image: 'assets/images/ingredients/cheese.png', name: 'Fromage', qte: '2 tranches'),
-      Ingredient(image: 'assets/images/ingredients/lettuce.png', name: 'Laitue', qte: '2 feuilles'),
-      Ingredient(image: 'assets/images/ingredients/tomato.png', name: 'Tomate', qte: '2 rondelles'),
+      Ingredient(
+        image: 'assets/images/ingredients/bread.png',
+        name: 'Pain à burger',
+        qte: '2',
+      ),
+      Ingredient(
+        image: 'assets/images/ingredients/beef.png',
+        name: 'Steak haché',
+        qte: '2',
+      ),
+      Ingredient(
+        image: 'assets/images/ingredients/cheese.png',
+        name: 'Fromage',
+        qte: '2 tranches',
+      ),
+      Ingredient(
+        image: 'assets/images/ingredients/lettuce.png',
+        name: 'Laitue',
+        qte: '2 feuilles',
+      ),
+      Ingredient(
+        image: 'assets/images/ingredients/tomato.png',
+        name: 'Tomate',
+        qte: '2 rondelles',
+      ),
     ],
     cookTimeMinutes: 15,
     prepTimeMinutes: 10,
@@ -183,17 +335,36 @@ List <Recipes>  recipesList = [
       'Assemblez le burger avec les légumes et le fromage.',
     ],
     categList: [categList[3], categList[5], categList[12]],
+    imgpng: 'assets/images/burgeracc.png',
+    chef: 'Chef Amra',
   ),
 
   Recipes(
     title: 'Pizza Margherita',
     image: 'assets/images/pizza.jpg',
-    description: 'Une pizza italienne classique avec tomate, mozzarella et basilic.',
+    description:
+        'Une pizza italienne classique avec tomate, mozzarella et basilic.',
     ingredients: [
-      Ingredient(image: 'assets/images/ingredients/flour.png', name: 'Pâte à pizza', qte: '1'),
-      Ingredient(image: 'assets/images/ingredients/tomato_sauce.png', name: 'Sauce tomate', qte: '100g'),
-      Ingredient(image: 'assets/images/ingredients/cheese.png', name: 'Mozzarella', qte: '100g'),
-      Ingredient(image: 'assets/images/ingredients/basil.png', name: 'Basilic', qte: 'Quelques feuilles'),
+      Ingredient(
+        image: 'assets/images/ingredients/flour.png',
+        name: 'Pâte à pizza',
+        qte: '1',
+      ),
+      Ingredient(
+        image: 'assets/images/ingredients/tomato_sauce.png',
+        name: 'Sauce tomate',
+        qte: '100g',
+      ),
+      Ingredient(
+        image: 'assets/images/ingredients/cheese.png',
+        name: 'Mozzarella',
+        qte: '100g',
+      ),
+      Ingredient(
+        image: 'assets/images/ingredients/basil.png',
+        name: 'Basilic',
+        qte: 'Quelques feuilles',
+      ),
     ],
     cookTimeMinutes: 15,
     prepTimeMinutes: 20,
@@ -204,6 +375,8 @@ List <Recipes>  recipesList = [
       'Parsemez de basilic frais avant de servir.',
     ],
     categList: [categList[3], categList[10]],
+    imgpng: 'assets/images/pizzaacc.png',
+    chef: 'Chef Juste',
   ),
 
   Recipes(
@@ -211,11 +384,31 @@ List <Recipes>  recipesList = [
     image: 'assets/images/crepes.jpg',
     description: 'Des crêpes fines et délicieuses, parfaites pour le goûter.',
     ingredients: [
-      Ingredient(image: 'assets/images/ingredients/flour.png', name: 'Farine', qte: '250g'),
-      Ingredient(image: 'assets/images/ingredients/egg.png', name: 'Œufs', qte: '3'),
-      Ingredient(image: 'assets/images/ingredients/milk.png', name: 'Lait', qte: '500ml'),
-      Ingredient(image: 'assets/images/ingredients/butter.png', name: 'Beurre', qte: '30g'),
-      Ingredient(image: 'assets/images/ingredients/sugar.png', name: 'Sucre', qte: '2 c.à.s'),
+      Ingredient(
+        image: 'assets/images/ingredients/flour.png',
+        name: 'Farine',
+        qte: '250g',
+      ),
+      Ingredient(
+        image: 'assets/images/ingredients/egg.png',
+        name: 'Œufs',
+        qte: '3',
+      ),
+      Ingredient(
+        image: 'assets/images/ingredients/milk.png',
+        name: 'Lait',
+        qte: '500ml',
+      ),
+      Ingredient(
+        image: 'assets/images/ingredients/butter.png',
+        name: 'Beurre',
+        qte: '30g',
+      ),
+      Ingredient(
+        image: 'assets/images/ingredients/sugar.png',
+        name: 'Sucre',
+        qte: '2 c.à.s',
+      ),
     ],
     cookTimeMinutes: 15,
     prepTimeMinutes: 10,
@@ -225,6 +418,8 @@ List <Recipes>  recipesList = [
       'Versez une louche de pâte et cuisez des deux côtés.',
     ],
     categList: [categList[7], categList[4], categList[11]],
+    imgpng: 'assets/images/crepesacc.png',
+    chef: 'Chef Amra',
   ),
 
   Recipes(
@@ -232,10 +427,26 @@ List <Recipes>  recipesList = [
     image: 'assets/images/smoothie.jpg',
     description: 'Un smoothie frais et énergisant avec des fruits et du lait.',
     ingredients: [
-      Ingredient(image: 'assets/images/ingredients/banana.png', name: 'Banane', qte: '1'),
-      Ingredient(image: 'assets/images/ingredients/strawberry.png', name: 'Fraises', qte: '100g'),
-      Ingredient(image: 'assets/images/ingredients/milk.png', name: 'Lait', qte: '200ml'),
-      Ingredient(image: 'assets/images/ingredients/honey.png', name: 'Miel', qte: '1 c.à.s'),
+      Ingredient(
+        image: 'assets/images/ingredients/banana.png',
+        name: 'Banane',
+        qte: '1',
+      ),
+      Ingredient(
+        image: 'assets/images/ingredients/strawberry.png',
+        name: 'Fraises',
+        qte: '100g',
+      ),
+      Ingredient(
+        image: 'assets/images/ingredients/milk.png',
+        name: 'Lait',
+        qte: '200ml',
+      ),
+      Ingredient(
+        image: 'assets/images/ingredients/honey.png',
+        name: 'Miel',
+        qte: '1 c.à.s',
+      ),
     ],
     cookTimeMinutes: 0,
     prepTimeMinutes: 5,
@@ -245,5 +456,7 @@ List <Recipes>  recipesList = [
       'Servez frais.',
     ],
     categList: [categList[8], categList[1], categList[13]],
+    imgpng: 'assets/images/smoothieacc.png',
+    chef: 'Chef Juste',
   ),
 ];
