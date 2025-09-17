@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 //import 'package:recipes_app/home.dart';
-import 'package:recipes_app/splash.dart';
-//import 'package:recipes_app/views/search.dart';
+//import 'package:recipes_app/splash.dart';
+import 'package:recipes_app/views/search.dart';
 
 void main() {
   runApp(const MyApp());
@@ -21,8 +21,8 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
       ),
       //home: Home(),
-      home: Splash(),
-      //home: Search(),
+      //home: Splash(),
+      home: Search(),
 
     );
   }
